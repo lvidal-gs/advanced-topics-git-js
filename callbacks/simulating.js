@@ -1,4 +1,4 @@
-function verifyIsAvailable(product, callback) {
+export function verifyIsAvailable(product, callback) {
   const menu = ["hamburger", "sushi", "pizza", "coke", "orange juice"]
 
   setTimeout(function() {
@@ -7,7 +7,7 @@ function verifyIsAvailable(product, callback) {
   }, 3 * 1000);
 }
 
-function showMessage(nameProduct, isAvailable){
+export function showMessage (nameProduct, isAvailable){
   if(isAvailable) {
     console.log("Estamos preparando seu pedido! ✅")
     console.log(`Aproveite seu ${nameProduct}`)
@@ -19,4 +19,5 @@ function showMessage(nameProduct, isAvailable){
   }
 }
 
-verifyIsAvailable("hot roll", showMessage)
+// const pedido = "coke"
+// // verifyIsAvailable(pedido, showMessage)
