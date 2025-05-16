@@ -1,3 +1,5 @@
+//An async functions depends directly of a promise. Without a promise we don't have any
+//way to do async operations.
 function sendDataToApi(forceError = false) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {

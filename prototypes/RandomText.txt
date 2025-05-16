@@ -1,4 +1,0 @@
-Just a random text
-Hello guys
-
-Just testing the versioning/git tags
