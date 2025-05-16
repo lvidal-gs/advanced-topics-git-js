@@ -3,7 +3,7 @@ function prototypeEx() {
   let set = new Set()
   let object = set
   do {
-    object = Object.getPrototypeOf(set) //An infinity loop
+    object = Object.getPrototypeOf(object)
     console.log(object);
   } while (object)
 }
