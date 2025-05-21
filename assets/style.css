@@ -1,5 +1,6 @@
 :root {
   --primary-color: #6633cc;
+  --second-color: #222;
 }
 
 * {
@@ -7,4 +8,37 @@
   margin: 0;
   padding: 0;
   outline: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+#drop-zone { 
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #666;
+  clip-path: polygon(25% 100%, 75% 100%, 99% 0, 0 0);
+  border-radius: 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#box {
+  width: 150px;
+  height: 50px;
+  background-color: var(--second-color);
+  margin: 5px;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
